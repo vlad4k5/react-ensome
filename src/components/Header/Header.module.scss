@@ -1,0 +1,68 @@
+@import '../../assets/styles/variables.scss';
+
+.header {
+  margin: 40px 0;
+  background-color: $white;
+
+  .headerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    
+  }
+
+  ul {
+    display: flex;
+    gap: 40px;
+
+    li {
+      list-style: none;
+      
+    }
+    a {
+      text-decoration: none;
+      font-style: normal;
+      font-weight: light;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      color: $gray;
+      transition: .2s;
+
+      &.active {
+        color: $black;
+        font-weight: 600;
+      }
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+
+  .blueButton {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: $blue;
+    border-radius: 6px;
+    font-weight: 500; // 600 in design
+    font-size: 14px;
+    line-height: 24px;      
+    letter-spacing: -0.01em;
+    color: $white;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover {
+      background-color: $lightBlue;
+    }
+
+    &:disabled {
+      background-color: $gray;
+    }
+  }
+}
