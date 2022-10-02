@@ -1,0 +1,46 @@
+@import './variables.scss';
+
+@mixin button {
+  border-radius: 6px;
+  line-height: 24px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+@mixin blueButton ($verticalPaddings, $width, $fontSize, $fontWeight, $letSpacing) {
+  @include button;
+  padding: $verticalPaddings 0;
+  width: $width;
+  background: $blue;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  letter-spacing: $letSpacing;
+  color: $white;
+
+  &:hover {
+    background-color: $lightBlue;
+  }
+
+  &:disabled {
+    background-color: $gray;
+  }
+}
+
+@mixin transparrentButton ($verticalPaddings, $fontSize, $fontWeight, $letSpacing) {
+  @include button;
+  color: $black;
+
+  &:hover {
+    color: $lightBlue;
+    path {
+      fill: $lightBlue;
+    }
+  }
+
+  &:disabled {
+    color: $gray;
+    path {
+      fill: $gray;
+    }
+  }
+}

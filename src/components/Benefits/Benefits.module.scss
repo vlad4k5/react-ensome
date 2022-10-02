@@ -1,0 +1,75 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.topContent {
+  position: relative;
+  width: 1110px;
+  height: 518px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+
+  .benefitsDescription {
+    max-width: 540px;
+    margin: auto 0;
+
+    h2{
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 60px;          
+      letter-spacing: -0.015em;
+      color: $black;
+    }
+    
+    p {
+      font-family: 'Open Sans';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 33px;          
+      letter-spacing: -0.015em;
+      color: $gray;
+    }
+
+    .buttons {
+      margin-top: 35px;
+      display: flex;
+      gap: 46px;
+
+      .transparrentButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        @include transparrentButton(15px, 16px, 700, -0.015em);
+
+        svg {
+          width: 31.5px;
+        }
+      }
+    }
+  }
+
+  .illustration {
+    width: 845px;
+    position: absolute;
+    top: 0px;
+    left: 570px;
+  }
+}
+
+.bottomContent {
+  border-top: 1px solid $lightGray; 
+  margin-top: 48px;
+
+  ul {
+    display: flex;
+    max-width: 1110px;
+    margin: 0 auto;
+
+    padding: 0px;
+
+    li {
+      list-style: none;
+    }
+  }
+}
