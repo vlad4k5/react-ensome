@@ -1,6 +1,6 @@
 @import '../../../../assets/styles/mixins.scss';
 
 .blueButton {
-  @include blueButton(15px, 190px, 16px, 700, -0.015em);
+  @include blueButton(15px, 190px, 16px, 700);
   box-shadow: 0px 12px 30px rgba(24, 92, 255, 0.18);
 }

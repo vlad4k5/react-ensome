@@ -7,14 +7,13 @@
   transition: .2s;
 }
 
-@mixin blueButton ($verticalPaddings, $width, $fontSize, $fontWeight, $letSpacing) {
+@mixin blueButton ($verticalPaddings, $width, $fontSize, $fontWeight,) {
   @include button;
   padding: $verticalPaddings 0;
   width: $width;
   background: $blue;
   font-weight: $fontWeight;
   font-size: $fontSize;
-  letter-spacing: $letSpacing;
   color: $white;
 
   &:hover {
@@ -28,7 +27,6 @@
 
 @mixin transparrentButton ($verticalPaddings, $fontSize, $fontWeight, $letSpacing) {
   @include button;
-  color: $black;
 
   &:hover {
     color: $lightBlue;
@@ -43,4 +41,35 @@
       fill: $gray;
     }
   }
+}
+
+@mixin headlineBig {
+  margin: 0;
+  font-size: 46px;   
+  line-height: 60px;
+  font-weight: 800;
+}
+
+@mixin headlineSmall {
+  margin: 0;
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 700;
+}
+
+@mixin paragraph {
+  font-family: 'Open Sans', sans-serif;
+  color: $gray;
+}
+
+@mixin paragraphBig {
+  @include paragraph;
+  font-size: 20px;
+  line-height: 33px;          
+}
+
+@mixin paragraphSmall {
+  @include paragraph;
+  font-size: 16px;
+  line-height: 28px;         
 }
