@@ -1,0 +1,40 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.overviewContainer {
+  background-color: $blue;
+
+  .overviewList {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 70px 0;
+
+    .overviewItem {
+      padding: 0 65px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .amount {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        font-size: 56px;
+        color: $white;
+        letter-spacing: -0.025em;
+      }
+  
+      p {
+        @include paragraphMedium;
+        color: $white;
+        font-weight: 700;
+        margin-top: 20px;
+      }
+
+      &:not(:first-child) {
+        border-left: 1px solid rgba(241, 246, 250, 0.2);
+      }
+    }
+  }
+}
