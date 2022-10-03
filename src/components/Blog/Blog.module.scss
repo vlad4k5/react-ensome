@@ -1,0 +1,52 @@
+@import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/variables.scss';
+
+.blog {
+  background-color: $skyBlue;
+
+  .blogContainer {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+
+    h2 {
+      @include headlineBig;
+    }
+
+    .blogList {
+      display: flex;
+      gap: 30px;
+      margin: 30px 0;
+
+      .blogItem {
+        max-width: 350px;
+        padding: 30px 35px 45px 35px;
+        background-color: $white;
+        box-shadow: 0px 12px 30px 17px rgba(24, 92, 255, 0.04);
+        border-radius: 6px;
+
+        .date {
+          @include paragraphSmall;
+        }
+
+        h3 {
+          @include headlineSmall;
+          margin-top: 20px;
+        }
+
+        p {
+          @include paragraphMedium;
+          margin: 16px 0 19px 0;
+        }
+
+        .buttons {
+          display: flex;
+          gap: 3px;
+        }
+      }
+    }
+  }
+}

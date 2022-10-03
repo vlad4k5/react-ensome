@@ -43,15 +43,32 @@
   }
 }
 
+@mixin whiteButton {
+  @include button;
+  padding: 3px 11px;
+  background-color: $white;
+  border: 1px solid $lightGray;
+  color: blue;
+  font-weight: 800;
+  font-size: 14px;
+
+  &:hover {
+    color: $white;
+    background-color: $blue;
+  }
+
+  &:disabled {
+    color: $gray;
+  }
+}
+
 @mixin headlineBig {
-  margin: 0;
   font-size: 46px;   
   line-height: 60px;
   font-weight: 800;
 }
 
 @mixin headlineSmall {
-  margin: 0;
   font-size: 22px;
   line-height: 33px;
   font-weight: 700;
@@ -68,8 +85,14 @@
   line-height: 33px;          
 }
 
-@mixin paragraphSmall {
+@mixin paragraphMedium {
   @include paragraph;
   font-size: 16px;
   line-height: 28px;         
+}
+
+@mixin paragraphSmall {
+  @include paragraph;
+  font-size: 14px;
+  line-height: 24px;         
 }
