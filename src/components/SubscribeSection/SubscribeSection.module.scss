@@ -1,0 +1,63 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+
+.subscribeContainer {
+  background-color: $blue;
+
+  .subscribeSection {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    padding: 80px 0;
+
+    .subscribeInfo {
+      max-width: 540px;
+
+      h3 {
+        @include headlineMedium;
+        color: $white;
+      }
+
+      p {
+        @include paragraphBig;
+        margin-top: 25px;
+        font-weight: 400;
+        color: $white;
+      }
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      max-width: 445px;
+      height: 54px;
+      background-color: $blueGray;
+      border-radius: 6px;
+
+      input {
+        outline: none;
+        width: 270px;
+        margin: 0 25px;
+
+        &::placeholder {
+          opacity: 0.9;
+        }
+      }
+
+      button {
+        @include button;
+        background-color: $white;
+        width: 125px;
+        padding: 15px 0;
+
+        &:hover {
+          background-color: darken($white, 8%);
+        }
+      }
+    }
+  }
+}
