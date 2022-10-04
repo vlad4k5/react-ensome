@@ -1,5 +1,6 @@
 import 'normalize.css'
 import './assets/styles/global.scss'
+import Footer from './components/Footer/Footer'
 import Header from "./components/Header/Header"
 import Home from './pages/Home/Home'
 
@@ -10,6 +11,7 @@ const App = () => {
       <main>
         <Home />
       </main>
+      <Footer />
     </div>
   )
 }

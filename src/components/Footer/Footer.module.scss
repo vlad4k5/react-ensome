@@ -1,0 +1,157 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+
+.footerContainer {
+  background-color: $lightGray;
+
+  footer {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 50px 0 40px 0;
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+
+      img {
+        padding: 6px 0;
+      }
+
+      nav {
+        width: 445px;
+        display: flex;
+        justify-content: space-between;
+
+        .navSection {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          h4 {
+            line-height: 24px;
+          }
+
+          a {
+            text-decoration: none;
+            transition: .2s;
+
+            &:hover {
+              color: $lightBlue;
+            }
+
+            &.active {
+              font-weight: 600;
+              color: $blue;
+            }
+          }
+        }
+      }
+    }
+
+    .contactsContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 0;
+      margin: 40px 0;
+      border-top: 1px solid $blueGray;
+      border-bottom: 1px solid $blueGray;
+
+      .contacts {
+        display: flex;
+        gap: 40px;
+        align-items: end;
+
+        .contactsSection {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          h4 {
+            line-height: 24px;
+            margin-bottom: 15px;
+          }
+
+          span {
+            @include paragraphSmall;
+            color: $black;
+          }
+
+          a {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+
+            svg {
+              margin-left: 7px;
+              transition: .3s;
+            }
+
+            &:hover {
+              svg {
+                transform: translateX(5px);
+              }
+            }
+          }
+        }
+      }
+
+      .social {
+        padding-right: 30px;
+
+        h4 {
+          line-height: 24px;
+          margin-bottom: 15px;
+        }
+
+        .socialList {
+          display: flex;
+          gap: 16px;
+
+          img {
+            width: 24px;
+          }
+        }
+      }
+    }
+
+    .additinalInfo {
+      display: flex;
+      justify-content: space-between;
+
+      .links {
+        display: flex;
+        gap: 80px;
+
+        a {
+          text-decoration: none;
+          color: $gray;
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 600;
+          letter-spacing: -0.01em;
+          transition: .3s;
+
+          svg {
+            margin-left: 7px;
+            transition: .3s;
+          }
+
+          &:hover {
+            svg {
+              transform: translateX(5px);
+            }
+          }
+        }
+      }
+
+      .copyright {
+        @include paragraphSmall;
+        padding-right: 25px;
+      }
+    }
+  }
+}
