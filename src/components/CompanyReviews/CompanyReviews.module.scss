@@ -1,0 +1,77 @@
+@import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/variables.scss';
+
+
+.reviews {
+  max-width: 1110px;
+  margin: 100px auto;
+
+  .topBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      @include headlineBig;
+      max-width: 445px;
+    }
+
+    .navButtons {
+      display: flex;
+      gap: 15px;
+
+      button {
+        padding: 15px 40px;
+        height: 60px;
+        background-color: $skyBlue;
+        border-radius: 20px;
+        cursor: pointer;
+
+        &:disabled {
+          cursor: default;
+
+          path {
+            fill: $blueGray;
+          }
+        }
+      }
+    }
+  }
+
+  .reviewList {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    gap: 30px;
+
+    .reviewItem {
+      display: flex;
+      flex-direction: column;
+      max-width: 540px;
+      box-shadow: 0px 4px 12px rgba(12, 68, 204, 0.1);
+      border-radius: 6px;
+      padding: 75px 35px 35px 35px;
+
+      .authorPhoto {
+        width: 80px;
+        position: absolute;
+        top: -40px;
+      }
+  
+
+      .reviewText {
+        @include paragraphMedium;
+      }
+
+      .reviewAuthor {
+        margin: 35px 0 4px 0;
+        line-height: 24px;
+        font-weight: 700;
+      }
+
+      .authorPosition {
+        @include paragraphSmall;
+      }
+    }
+  }
+}
