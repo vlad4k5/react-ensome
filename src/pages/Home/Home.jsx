@@ -4,6 +4,7 @@ import Benefits from '../../components/Benefits/Benefits';
 import Blog from '../../components/Blog/Blog';
 import CompanyOverview from '../../components/CompanyOverview/CompanyOverview';
 import CompanyReviews from '../../components/CompanyReviews/CompanyReviews';
+import ContactUs from '../../components/ContactUs/ContactUs';
 import Features from '../../components/Features/Features';
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <Blog />
       <CompanyReviews />
       <CompanyOverview />
+      <ContactUs />
     </>
   );
 };

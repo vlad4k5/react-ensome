@@ -8,7 +8,7 @@ const Advantages = () => {
     <div className={s.advantagesContainer}>
       <div className={s.advantagesContent}>
         <h2>Why our clients chose Ensome?</h2>
-        <p>Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <p className={s.advantagesInfo}>Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
         
         <div className={s.advantagesList}>
           <div className={s.advantageItem}>
