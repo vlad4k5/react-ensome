@@ -1,6 +1,6 @@
-import s from './CompanyReviews.module.scss'
 import reviewAuthor1 from '../../assets/img/reviewAuthor1.png'
 import reviewAuthor2 from '../../assets/img/reviewAuthor2.png'
+import s from './CompanyReviews.module.scss'
 
 const CompanyReviews = () => {
   return (

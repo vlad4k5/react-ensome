@@ -9,7 +9,7 @@ const SubscribeSection = () => {
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
         </div>
         <form>
-          <input placeholder='Your email'/>
+          <input placeholder="Your email"/>
           <button>Send</button>
         </form>
       </div>

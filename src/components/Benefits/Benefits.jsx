@@ -1,4 +1,3 @@
-import s from './Benefits.module.scss'
 import BlueButton from '../../assets/components/Buttons/BlueButton/BlueButton'
 import illustration1 from '../../assets/img/illustration1.png'
 import clientLogo1 from '../../assets/img/clientLogo1.png'
@@ -7,6 +6,7 @@ import clientLogo3 from '../../assets/img/clientLogo3.png'
 import clientLogo4 from '../../assets/img/clientLogo4.png'
 import clientLogo5 from '../../assets/img/clientLogo5.png'
 import clientLogo6 from '../../assets/img/clientLogo6.png'
+import s from './Benefits.module.scss'
 
 
 const Benefits = () => {
@@ -31,12 +31,12 @@ const Benefits = () => {
 
       <div className={s.bottomContent}>
         <ul>
-          <li><a href='https://www.willowood.com/'><img src={clientLogo1} alt="Willo Wood"/></a></li>
-          <li><a href='https://applerush.com/'><img src={clientLogo2} alt="Apple Rush"/></a></li>
-          <li><a href='https://www.htwebsitedesigns.com/'><img src={clientLogo3} alt="HT"/></a></li>
-          <li><a href='https://avgroup.pro/'><img src={clientLogo4} alt="AV Group"/></a></li>
-          <li><a href='https://github.com/vlad4k5'><img src={clientLogo5} alt="Hard 2 Ignore"/></a></li>
-          <li><a href='https://fairtech.group/'><img src={clientLogo6} alt="Fairtech"/></a></li>
+          <li><a href="https://www.willowood.com/"><img src={clientLogo1} alt="Willo Wood"/></a></li>
+          <li><a href="https://applerush.com/"><img src={clientLogo2} alt="Apple Rush"/></a></li>
+          <li><a href="https://www.htwebsitedesigns.com/"><img src={clientLogo3} alt="HT"/></a></li>
+          <li><a href="https://avgroup.pro/"><img src={clientLogo4} alt="AV Group"/></a></li>
+          <li><a href="https://github.com/vlad4k5"><img src={clientLogo5} alt="Hard 2 Ignore"/></a></li>
+          <li><a href="https://fairtech.group/"><img src={clientLogo6} alt="Fairtech"/></a></li>
         </ul>
       </div>
       

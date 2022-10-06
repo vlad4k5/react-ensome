@@ -28,20 +28,20 @@ const ContactUs = () => {
             <h3>Contact Us</h3>
             <div className={s.formFields}>
               <div className={s.inputItem}>
-                <label for='name' className={s.inputLabel}>Name</label>
-                <input className={s.input} id='name' placeholder='Andrea'></input>
+                <label for="name" className={s.inputLabel}>Name</label>
+                <input className={s.input} id="name" placeholder="Andrea"></input>
               </div>
               <div className={s.inputItem}>
-                <label for='name' className={s.inputLabel}>Email</label>
-                <input className={s.input} id='name' placeholder='andrea@gmaol.com'></input>
+                <label for="name" className={s.inputLabel}>Email</label>
+                <input className={s.input} id="name" placeholder="andrea@gmaol.com"></input>
               </div>
               <div className={s.inputItem}>
-                <label for='name' className={s.inputLabel}>Theme</label>
-                <input className={s.input} id='name' placeholder='Job'></input>
+                <label for="name" className={s.inputLabel}>Theme</label>
+                <input className={s.input} id="name" placeholder="Job"></input>
               </div>
               <div className={s.inputItem}>
-                <label for='name' className={s.inputLabel}>Message</label>
-                <input className={s.input} id='name' placeholder='Your message'></input>
+                <label for="name" className={s.inputLabel}>Message</label>
+                <input className={s.input} id="name" placeholder="Your message"></input>
               </div>      
             </div>
           </div>
