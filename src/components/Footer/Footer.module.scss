@@ -13,7 +13,7 @@
     .navigation {
       display: flex;
       justify-content: space-between;
-      align-items: start;
+      align-items: flex-start;
 
       img {
         padding: 6px 0;
@@ -61,7 +61,7 @@
       .contacts {
         display: flex;
         gap: 40px;
-        align-items: end;
+        align-items: flex-end;
 
         .contactsSection {
           display: flex;

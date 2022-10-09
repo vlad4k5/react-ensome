@@ -27,6 +27,22 @@
         border-radius: 20px;
         cursor: pointer;
 
+        svg {
+          transition: .15s;
+        }
+
+        &.buttonForward:hover:enabled {
+          svg {
+            transform: translateX(5px);
+          }
+        }
+
+        &.buttonBack:hover:enabled {
+          svg {
+            transform: translateX(-5px);
+          }
+        }
+
         &:disabled {
           cursor: default;
 
